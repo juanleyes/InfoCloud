@@ -53,6 +53,11 @@
   }
 
   /* about-us */
+  #about-us h2,
+  #news h2,
+  #contact h2 {
+    text-align: center;
+  }
   .about-us__card__container {
     justify-content: center;
     grid-template-columns: 200px 200px;
@@ -96,7 +101,8 @@
   }
 
   .hero__info p {
-    width: 70%;
+    width: 90%;
+    text-align: center;
   }
 
   /* abouy-us */
