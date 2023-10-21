@@ -6,6 +6,7 @@
     <title>InfoCloud</title>
     <link rel="icon" href="./assets/img/logo.png" />
     <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/mediaqueris.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -15,15 +16,19 @@
     <header>
       <img src="./assets/img/logo.png" alt="logo" class="logo" />
       <nav class="navbar">
+        <div class="menu__label">
+          <i class="fa-solid fa-bars menu__icon" style="color: #000000"></i>
+        </div>
         <ul class="navbar__list">
-          <li class="navbar__link"><a href="#hero">Inicio</a></li>
-          <li class="navbar__link"><a href="#about-us">Sobre nosotros</a></li>
-          <li class="navbar__link"><a href="#news">Noticias</a></li>
-          <li class="navbar__link"><a href="#contact">Contactanos</a></li>
+          <li><a class="navbar__link" href="#hero">Inicio</a></li>
+          <li><a class="navbar__link" href="#about-us">Sobre nosotros</a></li>
+          <li><a class="navbar__link" href="#news">Noticias</a></li>
+          <li><a class="navbar__link" href="#contact">Contactanos</a></li>
         </ul>
+        <i class="fa-regular fa-bookmark fav__icon" style="color: #000000"></i>
+
+        <div class="overlay"></div>
       </nav>
-      <i class="fa-regular fa-bookmark" style="color: #000000"></i>
-      <i class="fa-solid fa-bars" style="color: #000000"></i>
     </header>
     <main>
       <section id="hero">
@@ -42,7 +47,7 @@
         <h2>Crece, conoce y confía</h2>
         <div class="about-us__card__container">
           <div class="about-us__card">
-            <h3>Actualizacion en tiempo real</h3>
+            <h3>Actualización en tiempo real</h3>
             <p>Manténte informado al instante y en tiempo real.</p>
           </div>
           <div class="about-us__card">
@@ -60,7 +65,7 @@
           <div class="about-us__card">
             <h3>Adaptables</h3>
             <p>
-              Informate estes donde estes, desde tu celular, tables, PC, etc.
+              Informate estés donde estés, desde tu celular, tables, PC, etc.
             </p>
           </div>
           <div class="about-us__card">
@@ -151,5 +156,6 @@
       <hr class="hr" />
       <p>Todos los derechos reservados 2023</p>
     </footer>
+    <script src="./assets/index.js"></script>
   </body>
 </html>

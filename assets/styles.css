@@ -19,6 +19,7 @@ header {
   background: white;
   width: 100%;
   position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -27,8 +28,25 @@ header {
   border-bottom: 2px solid #1bb553;
 }
 
+.menu__label {
+  display: none;
+}
+
+.fav__icon {
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+
 .logo {
   height: 60px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
 }
 
 .navbar__list {
@@ -38,9 +56,23 @@ header {
   gap: 30px;
 }
 
-.navbar__link a {
+.navbar__link {
   color: black;
   font-weight: 600;
+}
+
+.overlay {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none;
 }
 
 main,
@@ -69,6 +101,7 @@ footer {
 .hero__info {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 15px;
 }
 
@@ -96,8 +129,8 @@ footer {
 
 .about-us__card__container {
   display: grid;
-  grid-template-columns: 350px 350px 350px;
-  gap: 60px;
+  grid-template-columns: 350px 350px;
+  gap: 70px;
 }
 
 .about-us__card {
@@ -170,7 +203,7 @@ footer {
 }
 
 footer {
-  padding: 70px 0 15px 0;
+  padding: 60px 0 15px 0;
   gap: 10px;
 }
 
