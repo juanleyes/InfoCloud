@@ -2,6 +2,7 @@
 @media (max-width: 992px) {
   /* header */
   .navbar {
+    justify-content: space-between;
     gap: 20px;
   }
 
@@ -30,7 +31,11 @@
   }
 
   .menu__icon {
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  .fav__icon {
+    font-size: 20px;
   }
 
   .open-menu {
@@ -116,6 +121,11 @@
 
   .about-us__card p {
     text-align: center;
+  }
+
+  /* contact */
+  .form__input {
+    width: 200px;
   }
 
   /* footer */
