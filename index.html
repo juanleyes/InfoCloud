@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InfoCloud</title>
+    <link rel="icon" href="./assets/img/logo.png" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/img/logo.png" alt="logo" class="header__logo" />
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__link"><a href="#hero">Inicio</a></li>
+          <li class="navbar__link"><a href="#about-us">Sobre nosotros</a></li>
+          <li class="navbar__link"><a href="#news">Noticias</a></li>
+          <li class="navbar__link"><a href="#contact">Contactanos</a></li>
+        </ul>
+      </nav>
+      <i class="fa-regular fa-bookmark" style="color: #000000"></i>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="hero__info">
+          <h1>Hacemos noticias, te acercamos al mundo.</h1>
+          <p>
+            No solo informamos sobre el presente; estamos construyendo el futuro
+            juntos. Únete a comunidad, donde cada noticia es una oportunidad
+            para aprender, crecer y hacer del mundo un lugar mejor. Te alentamos
+            a actuar, a discutir, a hacer preguntas y a desafiar el status quo.
+          </p>
+        </div>
+        <img src="./assets/img/heroImg.png" alt="heroImg" />
+      </section>
+      <section id="about-us">
+        <h2>Crece, conoce y confía</h2>
+        <div class="about-us__card__container">
+          <div class="about-us__card">
+            <h3>Actualizacion en tiempo real</h3>
+            <p>Manténte informado al instante y en tiempo real.</p>
+          </div>
+          <div class="about-us__card">
+            <h3>Fuentes Confiables</h3>
+            <p>Fuentes de noticias e información verificadas.</p>
+          </div>
+          <div class="about-us__card">
+            <h3>Transparencia</h3>
+            <p>Somos responsables y nos comprometemos con la verdad.</p>
+          </div>
+          <div class="about-us__card">
+            <h3>Creamos comunidades</h3>
+            <p>Nos interesa tu opinión, debate y charla con nosotros.</p>
+          </div>
+          <div class="about-us__card">
+            <h3>Adaptables</h3>
+            <p>
+              Informate estes donde estes, desde tu celular, tables, PC, etc.
+            </p>
+          </div>
+          <div class="about-us__card">
+            <h3>Diversidad de contenido</h3>
+            <p>
+              Te informamos sobre una amplia variedad de hámbitos para que
+              aprendas más.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="news">
+        <h2>Las noticias que debes conocer</h2>
+        <div class="categories">
+          <button class="category">Todas</button>
+          <button class="category">Política</button>
+          <button class="category">Deporte</button>
+          <button class="category">Tecnología</button>
+          <button class="category">Entretenimiento</button>
+        </div>
+        <div class="news__container"></div>
+      </section>
+      <section id="contact">
+        <h2 class="form__title">Dejanos tu opinon o noticia aquí.</h2>
+        <form class="form__container">
+          <div class="form__field">
+            <input
+              type="text"
+              placeholder="Nombres"
+              class="form__input"
+              id="name"
+            />
+          </div>
+          <div class="form__field">
+            <input
+              type="text"
+              placeholder="Apellidos"
+              class="form__input"
+              id="lastName"
+            />
+          </div>
+          <div class="form__field">
+            <input
+              type="email"
+              placeholder="Email"
+              class="form__input"
+              id="email"
+            />
+          </div>
+          <div class="form__field">
+            <input
+              type="tel"
+              placeholder="Teléfono"
+              class="form__input"
+              id="telephone"
+            />
+          </div>
+          <div class="form__field">
+            <input
+              type="text"
+              placeholder="Mensaje"
+              class="form__input"
+              id="mesagge"
+            />
+          </div>
+          <input type="submit" class="form__btn" value="Enviar" />
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
