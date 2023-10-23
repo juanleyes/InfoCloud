@@ -2,7 +2,7 @@
 @media (max-width: 992px) {
   /* header */
   .navbar {
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
   }
 
