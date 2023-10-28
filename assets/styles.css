@@ -24,8 +24,8 @@ header {
   justify-content: space-around;
   align-items: center;
   height: 75px;
-  box-shadow: 0px 1px 5px 0px #1bb553;
-  border-bottom: 2px solid #1bb553;
+  box-shadow: 0px 1px 5px 0px black;
+  border-bottom: 2px solid black;
 }
 
 .menu__label {
@@ -140,7 +140,7 @@ footer {
 }
 
 .about-us__card h3 {
-  border-bottom: 2px solid #1bb553;
+  border-bottom: 2px solid black;
 }
 
 .categories {
@@ -151,13 +151,82 @@ footer {
 }
 
 .category {
-  border: 2px solid #1bb553;
-  box-shadow: 0px 1px 5px 0px #1bb553;
+  border: 2px solid black;
+  box-shadow: 0px 1px 5px 0px black;
   padding: 10px 15px;
   color: black;
   font-weight: 600;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.news__container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.new {
+  width: 300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.new img {
+  width: 300px;
+}
+
+.new__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.new-top,
+.new-mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.new-top h3 {
+  font-weight: 600;
+}
+
+.new-top p {
+  font-size: 14px;
+  color: #4a4d4f;
+  text-align: end;
+}
+
+.new-mid p {
+  font-size: 15px;
+}
+
+.new-bot {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.more__btn {
+  border: none;
+  padding: 5px 10px;
+  background: black;
+  color: white;
+}
+
+.fav__btn {
+  font-size: 20px;
 }
 
 #contact {
@@ -173,7 +242,7 @@ footer {
 }
 
 .form__title {
-  border-bottom: 2px solid #1bb553;
+  border-bottom: 2px solid black;
 }
 
 .form__container {
@@ -185,20 +254,20 @@ footer {
 }
 
 .form__input {
-  border: 2px solid #1bb553;
-  box-shadow: 0px 1px 5px 0px #1bb553;
+  border: 2px solid black;
+  box-shadow: 0px 1px 5px 0px black;
   padding: 10px 15px;
   border-radius: 10px;
   width: 300px;
 }
 
 .form__btn {
-  background: #1bb553;
+  background: black;
   color: white;
   border: none;
   font-weight: 600;
   padding: 10px 15px;
-  border-radius: 10px;
+
   width: 150px;
 }
 
@@ -214,7 +283,7 @@ footer {
 }
 
 .social-links a {
-  color: #1bb553;
+  color: black;
 }
 
 .legal-links a {

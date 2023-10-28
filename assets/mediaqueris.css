@@ -14,7 +14,8 @@
     width: 90%;
     flex-direction: column;
     background-color: white;
-    border: 2px solid #1bb553;
+    border: 2px solid black;
+    box-shadow: 0px 1px 5px 0px black;
     border-top: 0px;
     border-radius: 0px 0px 15px 15px;
     align-items: center;
@@ -81,6 +82,10 @@
   .categories {
     flex-wrap: wrap;
     max-width: 400px;
+  }
+
+  .news__container {
+    width: 90%;
   }
 
   /* contact */
