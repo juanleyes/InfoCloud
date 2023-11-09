@@ -106,6 +106,10 @@
     gap: 50px;
   }
 
+  .hero__info h1 {
+    font-size: 32px;
+  }
+
   .hero__info p {
     width: 90%;
     text-align: center;

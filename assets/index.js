@@ -10,6 +10,8 @@ const favMenu = document.querySelector(".fav");
 const reportsFav = document.querySelector(".fav__container");
 // Contenedor de noticias
 const reportsContainer = document.querySelector(".news__container");
+// Btn eliminar favoritos
+const deleteBtn = document.querySelector(".delete__btn");
 
 // ----- FAVORITOS -----
 //Setear fav
@@ -52,7 +54,7 @@ const addReport = (e) => {
   createFavNoticia(noticia);
 
   renderFav();
-  console.log(favoritos);
+  disableBtn(deleteBtn);
 };
 
 //Fc crear objetos con info de la noticia para agregar a favoritos
@@ -138,6 +140,43 @@ const renderReports = (reportsList) => {
   reportsContainer.innerHTML += reportsList.map(createReportTemplate).join("");
 };
 
+//Fc para borrar favoritos
+
+const resetFavItems = () => {
+  favoritos = [];
+  updateCartState();
+};
+
+const completeFavAction = (confirmMsg, successMsg) => {
+  if (!favoritos.length) return;
+
+  if (window.confirm(confirmMsg)) {
+    resetFavItems();
+    alert(successMsg);
+  }
+};
+const deleteFav = () => {
+  completeFavAction(
+    "¿Deseas borrar tus favoritos?",
+    "No tienes noticias en favoritos"
+  );
+};
+
+//Fc para habilitar delete btn
+const disableBtn = (deleteBtn) => {
+  if (!favoritos.length) {
+    deleteBtn.classList.add("disabled");
+  } else {
+    deleteBtn.classList.remove("disabled");
+  }
+};
+
+//Fc para ejecutar fc de actualidar el estado del fav
+const updateCartState = () => {
+  renderFav();
+  disableBtn(deleteBtn);
+};
+
 //Funcion init
 const init = () => {
   menuBtn.addEventListener("click", toggleMenu);
@@ -148,6 +187,9 @@ const init = () => {
 
   reportsContainer.addEventListener("click", addReport);
   document.addEventListener("DOMContentLoaded", renderFav);
+
+  disableBtn(deleteBtn);
+  deleteBtn.addEventListener("click", deleteFav);
 };
 
 init();

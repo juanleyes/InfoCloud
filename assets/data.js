@@ -64,7 +64,7 @@ const reportsData = [
   },
   {
     id: 8,
-    title: "Las 'microcasas' que alivian la situacion de los sin techo.",
+    title: "Las microcasas que alivian la situacion de los sin techo.",
     date: "28/08/2023",
     synopsis:
       "Se tratan de una estrategia para refugiar y prindar alimentos a la poblacion sin techo de Sao Paulo, Brasil.",
@@ -82,7 +82,7 @@ const reportsData = [
   },
   {
     id: 10,
-    title: "'DATA' de Tainy sube al No. 2 de Top Latin Albums.",
+    title: "DATA de Tainy sube al No. 2 de Top Latin Albums.",
     date: "11/07/2023",
     synopsis:
       "El productor puertorriqueño vuelve al top 10 de Top Latin Albums de Billboards luego de 16 años con su último álbum Data.",
