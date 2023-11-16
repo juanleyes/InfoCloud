@@ -28,10 +28,10 @@ const reportsData = [
   },
   {
     id: 4,
-    title: "Twitch permitirá la transmisión simultanes con otras plataformas.",
+    title: "Twitch permitirá la transmisión simultanea con otras plataformas.",
     date: "21/10/2023",
     synopsis:
-      "La plataforma permitirá a sus creadores realizar transmisiones simultania en cualquier otro servicio de streaming, lo que es un gran cambio en sus políticas.",
+      "La plataforma permitirá a sus creadores realizar transmisiones simultanea en cualquier otro servicio de streaming, lo que es un gran cambio en sus políticas.",
     category: "entretenimiento",
     cardImg: "./assets/img/news/IMG-twitch.jpg",
   },
@@ -67,7 +67,7 @@ const reportsData = [
     title: "Las microcasas que alivian la situacion de los sin techo.",
     date: "28/08/2023",
     synopsis:
-      "Se tratan de una estrategia para refugiar y prindar alimentos a la poblacion sin techo de Sao Paulo, Brasil.",
+      "Se tratan de una estrategia para refugiar y brindar alimentos a la poblacion sin techo de Sao Paulo, Brasil.",
     category: "politica",
     cardImg: "./assets/img/news/IMG-microcasas.jpg",
   },
@@ -76,13 +76,13 @@ const reportsData = [
     title: "Kanye West y su ruptura con Adidas.",
     date: "08/08/2023",
     synopsis:
-      "Luego de conductas erráticas y dichos antisemitas por parte del artista, la marca anuncia que no venderá mas prodcutos Yeezy despues de 2023.",
+      "Luego de conductas erráticas y dichos antisemitas por parte del artista, la marca anuncia que no venderá más productos Yeezy despues de 2023.",
     category: "entretenimiento",
     cardImg: "./assets/img/news/IMG-kanyeWest.jpg",
   },
   {
     id: 10,
-    title: "DAT de Tainy sube al No. 2 de Top Latin Albums.",
+    title: "DATA de Tainy sube al No. 2 de Top Latin Albums.",
     date: "11/07/2023",
     synopsis:
       "El productor puertorriqueño vuelve al top 10 de Top Latin Albums de Billboards luego de 16 años con su último álbum Data.",
@@ -104,7 +104,7 @@ const reportsData = [
     title: "Google Bard ya disponible en español.",
     date: "13/07/2023",
     synopsis:
-      "La nueva IA de Google ya se encuentra disponible en más de 40 idiomas. La tecnologia permite presonalizar la experiencia, estimular la creatividad y realizar una variendad de actividades.",
+      "La nueva IA de Google ya se encuentra disponible en más de 40 idiomas. La tecnología permite presonalizar la experiencia, estimular la creatividad y realizar una variendad de actividades.",
     category: "tecnologia",
     cardImg: "./assets/img/news/IMG-googleBard.jpg",
   },

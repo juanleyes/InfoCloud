@@ -24,7 +24,7 @@ const messageInput = document.getElementById("message");
 // ----- CONTACTO -----
 const message = [];
 
-const saveToLocalSotrage = () => {
+const saveToLocalStorage = () => {
   localStorage.setItem("message", JSON.stringify(message));
 };
 //Fc validar input no vacio
@@ -179,15 +179,20 @@ const validateForm = (e) => {
       phone: telInput.value,
       message: messageInput.value,
     });
-    saveToLocalSotrage(message);
+    saveToLocalStorage(message);
     sendedForm();
   }
 };
 
 // ----- FAVORITOS -----
 
-//Setear fav
-let favoritos = [];
+//Setear fav (o extraemos los fav del LS)
+let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+//Fc guardar favoritos en LS
+const saveFav = () => {
+  localStorage.setItem("favoritos", JSON.stringify(favoritos));
+};
 
 //Fc template de la noticia en favoritos
 const createFavNoticiaTemplate = (favReport) => {
@@ -225,8 +230,7 @@ const addReport = (e) => {
   }
   createFavNoticia(noticia);
 
-  renderFav();
-  disableBtn(deleteBtn);
+  updateFavState();
 };
 
 //Fc crear objetos con info de la noticia para agregar a favoritos
@@ -242,7 +246,7 @@ const isExistingFavNoticia = (noticia) => {
 //Fc para borrar favoritos
 const resetFavItems = () => {
   favoritos = [];
-  updateCartState();
+  updateFavState();
 };
 
 const completeFavAction = (confirmMsg) => {
@@ -267,7 +271,8 @@ const disableBtn = (deleteBtn) => {
 };
 
 //Fc para ejecutar fc de actualidar el estado del fav
-const updateCartState = () => {
+const updateFavState = () => {
+  saveFav();
   renderFav();
   disableBtn(deleteBtn);
 };
