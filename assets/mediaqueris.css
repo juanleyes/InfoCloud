@@ -82,6 +82,11 @@
 
   .news__container {
     width: 90%;
+    gap: 40px;
+  }
+
+  .new {
+    width: 80%;
   }
 
   /* contact */

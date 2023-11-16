@@ -82,7 +82,7 @@ const reportsData = [
   },
   {
     id: 10,
-    title: "DATA de Tainy sube al No. 2 de Top Latin Albums.",
+    title: "DAT de Tainy sube al No. 2 de Top Latin Albums.",
     date: "11/07/2023",
     synopsis:
       "El productor puertorriqueño vuelve al top 10 de Top Latin Albums de Billboards luego de 16 años con su último álbum Data.",

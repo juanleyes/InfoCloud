@@ -96,47 +96,69 @@
       <section id="contact">
         <h2 class="form__title">Dejanos tu opinon o noticia aquí.</h2>
         <form class="form__container">
+          <!-- Nombre -->
           <div class="form__field">
             <input
               type="text"
               placeholder="Nombres"
               class="form__input"
               id="name"
+              autocomplete="off"
             />
+            <small></small>
           </div>
+
+          <!-- Apellido -->
           <div class="form__field">
             <input
               type="text"
               placeholder="Apellidos"
               class="form__input"
               id="lastName"
+              autocomplete="off"
             />
+            <small></small>
           </div>
+
+          <!-- Email -->
           <div class="form__field">
             <input
               type="email"
               placeholder="Email"
               class="form__input"
               id="email"
+              autocomplete="off"
             />
+            <small></small>
           </div>
+
+          <!-- Telefono -->
           <div class="form__field">
             <input
               type="tel"
               placeholder="Teléfono"
               class="form__input"
               id="telephone"
+              autocomplete="off"
             />
+            <small></small>
           </div>
+
+          <!-- MSG -->
           <div class="form__field">
             <input
               type="text"
               placeholder="Mensaje"
               class="form__input"
-              id="mesagge"
+              id="message"
+              autocomplete="off"
             />
+            <small></small>
           </div>
+
+          <!-- Submit -->
           <input type="submit" class="form__btn" value="Enviar" />
+          <small class="formMsg"></small>
         </form>
       </section>
     </main>
